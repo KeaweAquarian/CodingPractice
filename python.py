@@ -11,6 +11,8 @@ fruits = ['apples', 'oranges', 'grapes','pears']
 print(fruits[1])
 print(len(fruits))
 
-fruits.append('Mangoes')lsmvfk,
+fruits.append('Mangoes')
+
+#alfkjalsdkfglaks
 
 print(fruits)
