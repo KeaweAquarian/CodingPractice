@@ -16,3 +16,6 @@ fruits.append('Mangoes')
 #alfkjalsdkfglaks
 
 print(fruits)
+
+for i in range(len(fruits)):
+    print(fruits[i])
