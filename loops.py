@@ -1,3 +1,8 @@
 while True:
-    print(2 == int(input("what is x?")))
-    break
+    try:
+        print(2 == int(input("what is x?")))
+    except:
+        print("An exception occured") 
+    else:
+        print("it worked")       
+        break
