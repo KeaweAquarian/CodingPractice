@@ -8,3 +8,5 @@ else:
     print("email not valid")
 
     #Work through regular expressions
+
+    #practice using argparse and mypy checker.
