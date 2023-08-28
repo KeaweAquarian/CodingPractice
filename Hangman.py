@@ -14,16 +14,29 @@ print("Thank you for playing hangman. the computer has chossen the name of a mem
       If you guess wrong more than 5 times you hang! Good luck.")
 
 def hangman():
-    word = list(get_valid_word)
+    word = get_valid_word(words)
     word_letters = set(word)
     alphabet = set(string.ascii_lowercase)
     used_letters = set()
 
     while len(word_letters) > 0:
-        print("You have used these letters " , ''.join(used_letters))
+        print("You have used these letters " , ' '.join(used_letters))
 
+        word_list = [letter if letter in used_letters else '_' for letter in word]
+        print("Current word: ", " ".join(word_list))
 
-guess = input("What letter do you choose?")
+        user_letter = input("Guess a letter ".lower())
+        if user_letter in alphabet - used_letters:
+            used_letters.add(user_letter)
+            if user_letter in word_letters:
+                word_letters.remove(user_letter)
+
+        elif user_letter in used_letters:
+            print("You have already guessed that letter!")    
+        else:
+             print("I didn't understand that responce.")    
+
+hangman()
 
 
 
