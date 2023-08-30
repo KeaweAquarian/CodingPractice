@@ -44,4 +44,20 @@ numbers = [1,2,3,4,5]
 
 #slicing str
 
+# slice = "www.Keawe.com"
+
+
+# print(slice[4:-4:])
+
+#not == !
+
+i = True
+
+while i:
+    name = input("WHat is your name?")
+    if len(name) == 0:
+        continue
+    else: 
+        i = False
+
 
