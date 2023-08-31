@@ -51,13 +51,17 @@ numbers = [1,2,3,4,5]
 
 #not == !
 
-i = True
+# i = True
 
-while i:
-    name = input("WHat is your name?")
-    if len(name) == 0:
-        continue
-    else: 
-        i = False
+# while i:
+#     name = input("WHat is your name?")
+#     if len(name) == 0:
+#         continue
+#     else: 
+#         i = False
+# word = "Hello"
+# words = ["H", "o"]
+# word_list = [l if  l in words else "-" for l in word]
 
+# print("The word ", " ".join(word_list))
 
